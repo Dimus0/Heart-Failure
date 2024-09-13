@@ -65,12 +65,12 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'heart',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'postgres',
         'USER': 'postgres',
         'PASSWORD': '0000',
         'HOST': 'localhost',
-        'PORT': '5432',  # порт за замовчуванням для PostgreSQL
+        'PORT': '5432', 
     }
 }
 
