@@ -43,8 +43,7 @@ Logistic Regression Accuracy: 0.7
            1       0.73      0.64      0.68      5112
 
     accuracy                           0.70     10347
-   macro avg       0.71      0.70      0.70     10347
-weighted avg       0.71      0.70      0.70     10347
+
 
 Decision Tree Accuracy: 0.64
               precision    recall  f1-score   support
@@ -53,8 +52,6 @@ Decision Tree Accuracy: 0.64
            1       0.64      0.63      0.63      5112
 
     accuracy                           0.64     10347
-   macro avg       0.64      0.64      0.64     10347
-weighted avg       0.64      0.64      0.64     10347
 
 Random Forest Accuracy: 0.69
               precision    recall  f1-score   support
@@ -63,8 +60,6 @@ Random Forest Accuracy: 0.69
            1       0.69      0.69      0.69      5112
 
     accuracy                           0.69     10347
-   macro avg       0.69      0.69      0.69     10347
-weighted avg       0.69      0.69      0.69     10347
 
 Training KNN...
 KNN Accuracy: 0.68
@@ -74,8 +69,6 @@ KNN Accuracy: 0.68
            1       0.68      0.67      0.68      5112
 
     accuracy                           0.68     10347
-   macro avg       0.68      0.68      0.68     10347
-weighted avg       0.68      0.68      0.68     10347
 
 Gradient Boosting Accuracy: 0.74
               precision    recall  f1-score   support
@@ -84,8 +77,6 @@ Gradient Boosting Accuracy: 0.74
            1       0.77      0.67      0.71      5112
 
     accuracy                           0.74     10347
-   macro avg       0.74      0.74      0.73     10347
-weighted avg       0.74      0.74      0.74     10347
 
 XGBoost Accuracy: 0.73
               precision    recall  f1-score   support
@@ -94,8 +85,6 @@ XGBoost Accuracy: 0.73
            1       0.78      0.62      0.69      5112
 
     accuracy                           0.73     10347
-   macro avg       0.74      0.73      0.72     10347
-weighted avg       0.74      0.73      0.72     10347
 
 AdaBoost Accuracy: 0.73
               precision    recall  f1-score   support
@@ -104,8 +93,6 @@ AdaBoost Accuracy: 0.73
            1       0.76      0.66      0.71      5112
 
     accuracy                           0.73     10347
-   macro avg       0.74      0.73      0.73     10347
-weighted avg       0.73      0.73      0.73     10347
 
               precision    recall  f1-score   support
 
@@ -113,8 +100,6 @@ weighted avg       0.73      0.73      0.73     10347
            1       0.73      0.50      0.59      5112
 
     accuracy                           0.66     10347
-   macro avg       0.68      0.66      0.65     10347
-weighted avg       0.68      0.66      0.65     10347
 
 MLP Neural Network Accuracy: 0.74
               precision    recall  f1-score   support
@@ -123,10 +108,9 @@ MLP Neural Network Accuracy: 0.74
            1       0.75      0.71      0.73      5112
 
     accuracy                           0.74     10347
-   macro avg       0.74      0.74      0.74     10347
-weighted avg       0.74      0.74      0.74     10347
 
-
+_______________________________________________________________________
+_______________________________________________________________________
 Навчання моделі на основі даних для чоловіків 
 
 Logistic Regression Accuracy: 0.65
@@ -136,8 +120,6 @@ Logistic Regression Accuracy: 0.65
            1       0.66      0.61      0.63      5112
 
     accuracy                           0.65     10347
-   macro avg       0.65      0.65      0.65     10347
-weighted avg       0.65      0.65      0.65     10347
 
 Training Decision Tree...
 
@@ -148,8 +130,6 @@ Decision Tree Accuracy: 0.59
            1       0.58      0.60      0.59      5112
 
     accuracy                           0.59     10347
-   macro avg       0.59      0.59      0.59     10347
-weighted avg       0.59      0.59      0.59     10347
 
 Training Random Forest...
 
@@ -160,12 +140,8 @@ Random Forest Accuracy: 0.65
            1       0.65      0.65      0.65      5112
 
     accuracy                           0.65     10347
-   macro avg       0.65      0.65      0.65     10347
-weighted avg       0.65      0.65      0.65     10347
 
 Training KNN...
-
-
 KNN Accuracy: 0.63
               precision    recall  f1-score   support
 
@@ -173,8 +149,6 @@ KNN Accuracy: 0.63
            1       0.63      0.63      0.63      5112
 
     accuracy                           0.63     10347
-   macro avg       0.63      0.63      0.63     10347
-weighted avg       0.63      0.63      0.63     10347
 
 Training Gradient Boosting...
 
@@ -185,8 +159,6 @@ Gradient Boosting Accuracy: 0.7
            1       0.69      0.70      0.69      5112
 
     accuracy                           0.70     10347
-   macro avg       0.70      0.70      0.70     10347
-weighted avg       0.70      0.70      0.70     10347
 
 Training XGBoost...
 
@@ -197,8 +169,6 @@ XGBoost Accuracy: 0.68
            1       0.72      0.58      0.64      5112
 
     accuracy                           0.68     10347
-   macro avg       0.69      0.68      0.68     10347
-weighted avg       0.69      0.68      0.68     10347
 
 AdaBoost Accuracy: 0.69
               precision    recall  f1-score   support
@@ -207,8 +177,6 @@ AdaBoost Accuracy: 0.69
            1       0.69      0.68      0.69      5112
 
     accuracy                           0.69     10347
-   macro avg       0.69      0.69      0.69     10347
-weighted avg       0.69      0.69      0.69     10347
 
 Training Naive Bayes...
 
@@ -219,8 +187,6 @@ Naive Bayes Accuracy: 0.62
            1       0.69      0.43      0.53      5112
 
     accuracy                           0.62     10347
-   macro avg       0.64      0.62      0.61     10347
-weighted avg       0.64      0.62      0.61     10347
 
 Training MLP Neural Network...
 
@@ -231,19 +197,31 @@ MLP Neural Network Accuracy: 0.67
            1       0.65      0.69      0.67      5112
 
     accuracy                           0.67     10347
-   macro avg       0.67      0.67      0.67     10347
-weighted avg       0.67      0.67      0.67     10347
 
+----------------------------------------------------------------------------
+----------------------------------------------------------------------------
+----------------------------------------------------------------------------
+----------------------------------------------------------------------------
+----------------------------------------------------------------------------
+----------------------------------------------------------------------------
+----------------------------------------------------------------------------
+----------------------------------------------------------------------------
+----------------------------------------------------------------------------
+----------------------------------------------------------------------------
+Навчання моделі на основі даних  для жінок
 
+Logistic Regression Accuracy: 0.65
+              precision    recall  f1-score   support
 
+           0       0.64      0.69      0.67      5235
+           1       0.66      0.61      0.63      5112
 
+    accuracy                           0.65     10347
 
+Decision Tree Accuracy: 0.59
+              precision    recall  f1-score   support
 
+           0       0.60      0.58      0.59      5235
+           1       0.59      0.60      0.59      5112
 
-
-
-
-
-
-
-Навчання моделі на основі даних  для чоловіків 
+    accuracy                           0.59     10347
