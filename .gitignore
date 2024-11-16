@@ -2,3 +2,4 @@ env/Lib/site-packages/~gboost/lib/xgboost.dll
 env/
 *.log
 *.dll
+env\
