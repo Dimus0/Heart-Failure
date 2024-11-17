@@ -3,3 +3,5 @@ env/
 *.log
 *.dll
 env\
+env\Lib
+env/Lib
