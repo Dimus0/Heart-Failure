@@ -12,6 +12,13 @@ from django.contrib.auth.models import User
 from rest_framework.decorators import authentication_classes, permission_classes
 from rest_framework.authentication import SessionAuthentication, TokenAuthentication
 from rest_framework.permissions import IsAuthenticated
+from rest_framework import generics
+from .models import PatientIndicator
+from .serializers import PatientIndicatorsSerializer
+
+class PatientIndicatorsView(generics.CreateAPIView):
+    queryset = PatientIndicator.objects.all()
+    serializer_class = PatientIndicatorsSerializer
 
 @api_view(['POST'])
 def login(request):
