@@ -8,5 +8,5 @@ from django.views.generic import TemplateView
 urlpatterns = [
     path('model_predict/', get_recommendations),
     path('model/',GetRecommendationsView.as_view(), name='model'),
-    path('api', GetRecommendationsView.as_view(), name='get_recommendations'),
+    path('api/heart-risk/predict', GetRecommendationsView.as_view(), name='heart-risk-predict'),
 ]
