@@ -86,7 +86,6 @@ class GetRecommendationsView(APIView):
         serializer = PatientIndicatorsSerializers(data=request.data)
         if serializer.is_valid():
             try:
-                # Отримуємо дані після валідації
                 validated_data = serializer.validated_data
                 
                 if validated_data["cholesterol"] == 1:
@@ -96,7 +95,6 @@ class GetRecommendationsView(APIView):
                 elif validated_data["cholesterol"] == 3:
                     validated_data["cholesterol"] = round(random.uniform(6.21, 7.21), 2)
                 
-                # для gluc
                 if validated_data["gluc"] == 1:
                     validated_data["gluc"] = round(random.uniform(3.5, 5.7), 2)
                 elif validated_data["gluc"] == 2:
@@ -109,7 +107,6 @@ class GetRecommendationsView(APIView):
 
                 pulse = validated_data["ap_hi"] - validated_data["ap_lo"]
                 pulse_pressure_index = pulse / validated_data["ap_hi"]
-                # Перетворюємо на список для моделі
                 input_data = [
                     validated_data["age"],
                     validated_data["gender"],
@@ -124,23 +121,21 @@ class GetRecommendationsView(APIView):
                     pulse_pressure_index
                 ]
                     
-                # Перетворюємо у numpy-масив
                 input_array = np.array(input_data).reshape(1, -1)
 
-                # Передбачення моделі
-                prediction_probabilities = model.predict_proba(input_array)  # Отримуємо ймовірності для кожного класу
+                prediction_probabilities = model.predict_proba(input_array)
                 prediction = prediction_probabilities[0][1]
+                print(prediction)
 
-                # Генерація рекомендацій
                 recommendations = []
-                if prediction >= 0.9:
+                if prediction >= 0.8:
                     recommendations.append("Рекомендацiя: Робіть більше фізичної активності.")
                     recommendations.append("Рекомендацiя: Контролюйте рівень стресу.")
                     recommendations.append("Рекомендацiя: Регулярно відвідуйте лікаря.")
-                    disease_probability = prediction  # Ймовірність захворювання
+                    disease_probability = prediction
                 else:
                     recommendations.append("Рекомендація: У вас все добре))")
-                    disease_probability = 1 - prediction  # Ймовірність, що захворювання немає
+                    disease_probability = 1 - prediction 
 
                 return Response({
                     "prediction": int(prediction >= 0.9),  
