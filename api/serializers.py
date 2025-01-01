@@ -1,4 +1,4 @@
-from  rest_framework import serializers
+from rest_framework import serializers
 from django.contrib.auth.models import User
 from .models import PatientIndicator
 
@@ -19,9 +19,9 @@ class PatientIndicatorsSerializers(serializers.Serializer):
     gender = serializers.ChoiceField(choices=[(0, 'Female'), (1, 'Male')])
     height = serializers.FloatField(min_value=50, max_value=250)
     weight = serializers.FloatField(min_value=20, max_value=300)
-    is_smoke = serializers.BooleanField()
-    is_alco = serializers.BooleanField()
-    is_active = serializers.BooleanField()
+    is_smoke = serializers.IntegerField()
+    is_alco = serializers.IntegerField()
+    is_active = serializers.IntegerField()
     gluc = serializers.ChoiceField(choices=[(1, 'Normal'), (2, 'Above Normal'), (3, 'Well Above Normal')])
     cholesterol = serializers.ChoiceField(choices=[(1, 'Normal'), (2, 'Above Normal'), (3, 'Well Above Normal')])
     ap_hi = serializers.IntegerField(min_value=50, max_value=300)
